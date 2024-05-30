@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Crown2</display-name>
+  <welcome-file-list>
+    <welcome-file>viewpage/success.jsp</welcome-file>
+
+  </welcome-file-list>
+  <filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>controller.filter.AuthenticationFilter</filter-class>
+</filter>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/AddProductServlet</url-pattern>
+</filter-mapping>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/AddToCartServlet</url-pattern>
+</filter-mapping>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/CartOperationServlet</url-pattern>
+</filter-mapping>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/crownProfile</url-pattern>
+</filter-mapping>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/crownProfileEdit</url-pattern>
+</filter-mapping>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/crownRegister</url-pattern>
+</filter-mapping>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/DeleteProductServlet</url-pattern>
+</filter-mapping>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/OrderOperationServlet</url-pattern>
+</filter-mapping>
+
+<filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/UpdateProductServlet</url-pattern>
+</filter-mapping>
+</web-app>
